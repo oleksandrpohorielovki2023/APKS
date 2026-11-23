@@ -1,0 +1,33 @@
+[*] GTKWave save file: key signals of tb_i2c
+[size] 1600 900
+[pos] 0 0
+[sst_expanded] 0
+[signals_width] 230
+[sst_width] 0
+@28
+tb_i2c.clk
+tb_i2c.rst
+tb_i2c.start
+tb_i2c.rw
+@22
+tb_i2c.addr[6:0]
+tb_i2c.wdata[7:0]
+@28
+tb_i2c.scl
+tb_i2c.sda
+@24
+tb_i2c.u_master.state[3:0]
+@28
+tb_i2c.busy
+tb_i2c.done
+tb_i2c.ack_err
+@22
+tb_i2c.rdata[7:0]
+@24
+tb_i2c.u_slave.state[2:0]
+@28
+tb_i2c.s_addr_hit
+tb_i2c.s_rx_valid
+@22
+tb_i2c.s_rx_data[7:0]
+tb_i2c.s_tx_data[7:0]
