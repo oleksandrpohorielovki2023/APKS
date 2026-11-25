@@ -1,0 +1,44 @@
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:     124/   7680     1%
+Info: 	        ICESTORM_RAM:       0/     32     0%
+Info: 	               SB_IO:      32/    206    15%
+Info: 	               SB_GB:       1/      8    12%
+Info: 	        ICESTORM_PLL:       0/      2     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+
+Info: Critical path report for clock 'clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source u_master.div_cnt_SB_DFFSR_Q_11_D_SB_LUT4_O_LC.O
+Info:    routing  0.59  1.13 Net u_master.div_cnt[4] (11,9) -> (11,8)
+Info:                          Sink u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_2_I3_SB_LUT4_O_1_LC.I0
+Info:                          Defined in:
+Info:                               rtl/i2c_master.v:56.16-56.23
+Info:      logic  0.45  1.58 Source u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_2_I3_SB_LUT4_O_1_LC.O
+Info:    routing  0.59  2.16 Net u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_2_I3[3] (11,8) -> (11,8)
+Info:                          Sink u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\Admin\tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  2.48 Source u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3_SB_LUT4_O_2_LC.O
+Info:    routing  0.96  3.44 Net u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_I3[2] (11,8) -> (11,11)
+Info:                          Sink u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\Admin\tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  3.75 Source u_master.done_SB_DFFSR_Q_D_SB_LUT4_O_1_LC.O
+Info:    routing  0.59  4.34 Net u_master.ack_err_SB_LUT4_I2_1_I3[3] (11,11) -> (12,12)
+Info:                          Sink start_SB_LUT4_I1_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\Admin\tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  4.66 Source start_SB_LUT4_I1_I3_SB_LUT4_O_LC.O
+Info:    routing  0.59  5.24 Net start_SB_LUT4_I1_I3[3] (12,12) -> (13,12)
+Info:                          Sink u_master.busy_SB_DFFESR_Q_E_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               C:\Users\Admin\tools\oss-cad-suite\bin\../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  5.56 Source u_master.busy_SB_DFFESR_Q_E_SB_LUT4_O_LC.O
+Info:    routing  1.84  7.39 Net u_master.busy_SB_DFFESR_Q_E (13,12) -> (13,13)
+Info:                          Sink u_master.busy_SB_DFFESR_Q_DFFLC.CEN
+Info:      setup  0.10  7.49 Source u_master.busy_SB_DFFESR_Q_DFFLC.CEN
+Info: 2.35 ns logic, 5.15 ns routing
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 133.44 MHz (PASS at 50.00 MHz)
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 7.38 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 3.11 ns

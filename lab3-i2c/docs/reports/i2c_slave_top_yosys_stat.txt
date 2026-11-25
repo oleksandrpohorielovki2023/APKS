@@ -1,0 +1,19 @@
+=== i2c_slave_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       81 wires
+      188 wire bits
+       81 public wires
+      188 public wire bits
+        8 ports
+       22 port bits
+      112 cells
+        1   $_TBUF_
+        1   $scopeinfo
+        2   SB_CARRY
+       13   SB_DFF
+       23   SB_DFFESR
+        2   SB_DFFSR
+       70   SB_LUT4
+
