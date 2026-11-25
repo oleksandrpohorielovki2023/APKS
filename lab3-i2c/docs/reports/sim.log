@@ -1,0 +1,12 @@
+VCD info: dumpfile i2c.vcd opened for output.
+[ 200.25 us] PASS: write 0xA5: slave ACK
+[ 200.25 us] PASS: write 0xA5: slave received 0xA5
+[ 400.31 us] PASS: write 0x3C: slave ACK
+[ 400.31 us] PASS: write 0x3C: slave received 0x3C
+[ 600.37 us] PASS: read: slave ACK
+[ 600.37 us] PASS: read: master received 0x5A
+[ 800.43 us] PASS: read: master received 0xC3
+[ 910.49 us] PASS: wrong address 0x21: NACK detected
+[ 910.49 us] PASS: wrong address: slave data unchanged
+RESULT: ALL TESTS PASSED
+tb/tb_i2c.v:119: $finish called at 912490000 (1ps)
